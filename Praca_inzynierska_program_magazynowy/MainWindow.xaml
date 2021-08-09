@@ -1,0 +1,26 @@
+﻿<Window x:Class="Praca_inzynierska_program_magazynowy.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Praca_inzynierska_program_magazynowy"
+        mc:Ignorable="d"
+      Title="MainWindow" Height="720" Width="901">
+    <Grid Margin="0,0,-6,-3">
+        <Button x:Name="WZZPlacu" Content="WZ Z Placu" HorizontalAlignment="Left" VerticalAlignment="Top" Height="91" Width="212" Click="WZZPlacu_Click" />
+        <Button x:Name="PrzyjecieNaPlac" Content="Przyjęcie Na Plac" HorizontalAlignment="Left" VerticalAlignment="Top" Height="91" Width="212" Margin="236,0,0,0" Click="PrzyjecieNaPlac_Click" />
+        <Button x:Name="Zestawienia" Content="Zestawienia" HorizontalAlignment="Left" VerticalAlignment="Top" Height="91" Width="212" Margin="471,0,0,0" Click="Zestawienia_Click"/>
+        <Button x:Name="Stany" Content="Stany" HorizontalAlignment="Left" VerticalAlignment="Top" Height="91" Width="184" Margin="706,0,0,0" Click="Stany_Click" />
+        <Button x:Name="WystawWZ" Content="Wystaw WZ" HorizontalAlignment="Left" Margin="0,174,0,0" VerticalAlignment="Top" Height="46" Width="175" Click="WystawWZ_Click"/>
+        <Button x:Name="UsunWZ" Content="Usuń WZ" HorizontalAlignment="Left" Margin="180,174,0,0" VerticalAlignment="Top" Height="46" Width="175" Click="UsunWZ_Click" />
+        <Button x:Name="Odswiez" Content="Odśwież" HorizontalAlignment="Left" Margin="360,174,0,0" VerticalAlignment="Top" Height="46" Width="175" Click="Odswiez_Click" />
+        <Button x:Name="Drukuj" Content="Drukuj" HorizontalAlignment="Left" Margin="720,174,0,0" VerticalAlignment="Top" Height="46" Width="170" Click="Drukuj_Click" />
+        <Button x:Name="Zmien" Content="Zmień" HorizontalAlignment="Left" Margin="540,174,0,0" VerticalAlignment="Top" Height="46" Width="175" Click="Zmien_Click"/>
+        <Grid HorizontalAlignment="Left" Height="396" Margin="10,259,0,0" VerticalAlignment="Top" Width="881">
+            <!--<DataGrid Name="GenerowanieKolumn" AutoGenerateColumns="True" Background="White" AutoGeneratingColumn="AutoGenerowanieKolumny"  SelectionMode="Single" GridLinesVisibility="None" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" ColumnWidth="*" IsReadOnly="True" CanUserResizeRows="False"    Margin="10" SelectionChanged="GenerowanieKolumn_SelectionChanged"  />-->
+            <DataGrid x:Name="GenerowanieKolumn" HorizontalAlignment="Left" Height="158" Margin="243,161,0,0" VerticalAlignment="Top" Width="490" SelectionChanged="GenerowanieKolumn_SelectionChanged_1"/>
+        </Grid>
+    </Grid>
+</Window>
+
+<!--<DataGrid Name="GenerowanieKolumn" AutoGenerateColumns="True" Background="White" AutoGeneratingColumn="Autogeneratecolumn" SelectionMode="Single" GridLinesVisibility="None" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" ColumnWidth="*" IsReadOnly="True" CanUserResizeRows="False"   Margin="10" SelectionChanged="GenerowanieKolumn_SelectionChanged"  />-->
